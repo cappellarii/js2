@@ -1,22 +1,22 @@
-body {
-    font-family: verdana;
+#countlabel{
+    display: block;
     text-align: center;
-    
+    font-size: 10em;
+    font-family: helvetica;
 }
-#btn{
-    font-size: 3em;
-    padding: 5px 25px;
+#buttoncontainer{
+    text-align: center;
+
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #1384cf;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-#label1 {
-    font-size: 4em;
-    text-align: center;
-}
-#label2 {
-    font-size: 4em;
-    text-align: right
-}
-#label3 {
-    font-size: 4em;
-    text-align: left;
+.buttons:hover{
+    background-color: #093a55;
 }
