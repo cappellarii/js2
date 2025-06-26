@@ -13,26 +13,6 @@
   <p>Fumei: <span id="count2">0</span></p>
   <p>Abrir Phub: <span id="count3">0</span></p>
 
-  <script>
-    async function carregarContadores() {
-      const res = await fetch('/contadores');
-      const data = await res.json();
-      for (const chave in data) {
-        document.getElementById(chave).textContent = data[chave];
-      }
-    }
-
-    async function clicar(contador) {
-      const res = await fetch('/incrementar', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contador })
-      });
-      const data = await res.json();
-      document.getElementById(contador).textContent = data.valor;
-    }
-
-    carregarContadores();
   </script>
 </body>
 </html>
