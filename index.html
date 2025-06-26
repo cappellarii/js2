@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contador Local</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="pics/images (1).png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de fumadas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button onclick="clicar('count1')">Deiocu</button>
-  <button onclick="clicar('count2')">Fumei</button>
-  <button onclick="clicar('count3')">Abrir Phub</button>
-
-  <p>Deiocu: <span id="count1">0</span></p>
-  <p>Fumei: <span id="count2">0</span></p>
-  <p>Abrir Phub: <span id="count3">0</span></p>
-
-  </script>
+    <div class="container">
+        <div><label id="countlabel1">0</label><br></div>
+        <div><label id="countlabel2">0</label><br></div>
+        <div><label id="countlabel3">0</label><br></div>
+    </div>
+    <div id="buttoncontainer">
+        <button id="deiocu" class="buttons">DEI O CU</button>
+        <button id="fumei" class="buttons">FUMEI</button>
+        <button id="abriphub" class="buttons">ABRI O PHUB HOJE</button>
+    </div>
+    
+    
+    <script src="index.js"></script>
 </body>
 </html>
