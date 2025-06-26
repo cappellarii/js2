@@ -1,9 +1,18 @@
-#countlabel{
-    display: block;
-    text-align: center;
+
+.container {
+    display: flex; /* Torna os elementos filhos dispostos em linha */
+    justify-content: space-around; /* Espaçamento uniforme entre eles */
+    align-items: center; /* Alinha verticalmente */
+    height: 100vh; /* Altura da tela para centralizar verticalmente */
+}
+
+#countlabel1, #countlabel2, #countlabel3 {
     font-size: 10em;
     font-family: helvetica;
+    text-align: center;
 }
+
+
 #buttoncontainer{
     text-align: center;
 
@@ -12,11 +21,11 @@
     padding: 10px 20px;
     font-size: 1.5em;
     color: white;
-    background-color: #1384cf;
+    background-color: #4f575c;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .buttons:hover{
-    background-color: #093a55;
+    background-color: #2f3031;
 }
