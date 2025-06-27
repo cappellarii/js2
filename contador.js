@@ -1,6 +1,6 @@
-const deiocu = document.getElementById(`deiocu`);
-const fumei = document.getElementById(`fumei`);
-const abriphub = document.getElementById(`abriphub`);
+const contador1 = document.getElementById(`contador1`);
+const contador2 = document.getElementById(`contador2`);
+const contador3 = document.getElementById(`contador3`);
 const counter = document.getElementById(`counter`);
 const countlabel1 = document.getElementById(`countlabel1`);
 const countlabel2 = document.getElementById(`countlabel2`);
@@ -15,19 +15,19 @@ countlabel2.textContent = count2;
 countlabel3.textContent = count3;
 
 
-deiocu.onclick = function() {
+contador1.onclick = function() {
     count1++;
     countlabel1.textContent = count1;
     localStorage.setItem("count1", count1);
 }
 
-fumei.onclick = function() {
+contador2.onclick = function() {
     count2++;
     countlabel2.textContent = count2;
     localStorage.setItem("count2", count2);
 }
 
-abriphub.onclick = function() {
+contador3.onclick = function() {
     count3++;
     countlabel3.textContent = count3;
     localStorage.setItem("count3", count3);
