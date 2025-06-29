@@ -9,18 +9,18 @@ mysubmit.onclick = function() {
     age = Number(age);
 
     if(age >= 100){
-    resultelement.textContent = `you are a centenarian.`;
+    resultelement.textContent = `tu é velho.`;
 }
     else if(age == 0){
-    resultelement.textContent = `you cant enter, you was not born yet.`;
+    resultelement.textContent = `voce ainda nem nasceu.`;
 }
     else if(age >= 18) {
-    resultelement.textContent = `expired.`;
+    resultelement.textContent = `voce é maior de idade.`;
 }
     else if(age < 0){
     resultelement.textContent = `Invalid age.`;
 }
     else {
-    resultelement.textContent = `not expired >:)`;
+    resultelement.textContent = `voce é de menor`;
 }
 };
