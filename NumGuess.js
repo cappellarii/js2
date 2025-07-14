@@ -8,25 +8,25 @@ let running = true;
 
 while(running){
 
-    guess = window.prompt(`guess the number between ${minNum} and ${maxNum}`);
+    guess = window.prompt(`adivinhe o numero entre ${minNum} e ${maxNum}`);
     guess = Number(guess);
     
     if(isNaN(guess)){
-        window.alert("Please enter a valid number.");
+        window.alert("por favor coloque um numero valido.");
     }
     else if (guess < minNum || guess > maxNum){
-        window.alert(`Please enter a number between ${minNum} and ${maxNum}.`);
+        window.alert(`por favor coloque um numero entre ${minNum} e ${maxNum}.`);
     }
     else{
         attempts++;
         if(guess < randomNum){
-        window.alert(`Your guess is too low. Try again!`);
+        window.alert(`chutou muito baixo, tente denovo.`);
         }
         else if(guess > randomNum){
-        window.alert(`Your guess is too high. Try again!`);
+        window.alert(`chutou alto demais, tente denovo.`);
         }
         else{
-            window.alert(`correct! The number was ${randomNum}. It took you ${attempts} attempts.`);
+            window.alert(`acertou! o numero é ${randomNum}. e voce tentou ${attempts} vezes.`);
             running = false;
         }
     }
