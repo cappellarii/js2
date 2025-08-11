@@ -20,7 +20,10 @@ mysubmit.onclick = function() {
     else if(age < 0){
     resultelement.textContent = `idade invalida.`;
 }
+    else if(age < 18) {
+    resultelement.textContent = `voce é de menor.`;
+}
     else {
-    resultelement.textContent = `voce é de menor`;
+    resultelement.textContent = `insira um numero valido`;
 }
 };
