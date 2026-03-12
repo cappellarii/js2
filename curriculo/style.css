@@ -54,13 +54,25 @@ video {
     position: relative; /* Não é mais fixo */
     margin: 40px auto;  /* Centraliza horizontalmente */
     width: 70vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: rgba(230, 224, 215, 0.842);
     z-index: 0;
     color: rgb(0, 0, 0);
     pointer-events: none;
     border-radius: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background-overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background: linear-gradient(90deg, #4a4a4a, #2c3e50, #4a4a4a);
+    border-radius: 0 0 24px 24px;
 }
 .content {
     position: relative;
